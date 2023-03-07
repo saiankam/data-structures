@@ -6,11 +6,11 @@ class SLL:
     def __init__(self):
         self.head=None
     
-    def deletefirst(self):
+    def delete_first(self):
         temp=self.head
         self.head=temp.next
         temp.next=None
-    def deletelast(self):
+    def delete_last(self):
         temp=self.head.next
         prev=self.head
         while temp.next!=None:
@@ -38,8 +38,8 @@ n5=node(50)
 n4.next=n5
 obj.display()
 print(" ")
-obj.deletefirst()
+obj.delete_first()
 obj.display()
 print("")
-obj.deletelast()
+obj.delete_last()
 obj.display()
