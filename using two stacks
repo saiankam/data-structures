@@ -1,0 +1,44 @@
+s1=[]
+s2=[]
+def push():
+    element=int(input("enter the element"))
+    if element%2==0:
+        s1.append(element)
+        print("s1:",s1)
+    else:
+        s2.append(element)
+        print("s2:",s2)
+def pop():
+    print("1or 2")
+    i=int(input())
+    if not s1:
+        print("stack is empty")
+    elif i==1:
+        s1.pop()
+        print("S1:",s1)
+    elif not s2:
+        print("s2 is empty")
+    elif i==2:
+        i=s2.pop()
+        print("s2:",s2)
+    else:
+        print("stack is empty")
+def display():
+    print("1 or 2")
+    i=int(input())
+    if i==1:
+          print(s1)
+    elif i==2:
+        print(s2)
+while True:
+    print("select operation 1.push 2.pop 3.display")
+    choice=int(input())
+    if choice==1:
+        push()
+    elif choice==2:
+        pop()
+    elif choice==3:
+       display()
+    else:
+        print("enter the correct operation")
+        
